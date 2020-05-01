@@ -14,12 +14,16 @@
     "react-redux": "^5.0.5",
     "redux": "^3.5.2",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test"
-  }
+    "test": "react-scripts test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
