@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node server/index.js",
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,8 @@
     "react-redux": "^5.0.3",
     "redux": "^3.2.1",
     "redux-thunk": "^2.2.0",
-    "serve-static": "^1.12.1"
+    "serve-static": "^1.12.1",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -40,5 +43,6 @@
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.9.1"
-  }
+  },
+  "snyk": true
 }
